@@ -6,6 +6,7 @@ Scenario: I needed to configure two ssh keys, one personal and one work, on the 
 First generate two ssh keys.
 
 `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`
+
 `/.ssh/work_rsa` and `~/.ssh/work_rsa.pub`
 
 And configure them in Gitlab according to the [documentation](https://docs.gitlab.com/ee/user/ssh.html "documentation").
@@ -34,8 +35,9 @@ fi
 
 git "$@"
 ```
-
 When you're working inside that directory and use the `git` command, it uses the work key, instead if I'm in another directory, use my personal key.
+
+Now we will generate an alias for the git command
 
 In my case, when using zsh, what I did was generate an alias in `~/.zshrc`
 
