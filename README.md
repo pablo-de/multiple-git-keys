@@ -47,4 +47,4 @@ After adding the alias, remember to update your zsh configuration file with the 
 
 `source ~/.zshrc`
 
-I like it this way and all configuration changes only affect git.
+Now when you use git it will use the corresponding key.
