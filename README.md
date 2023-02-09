@@ -20,7 +20,7 @@ Create the file `~/.ssh/config` and add the following contents:
         IdentityFile ~/.ssh/id_rsa
 
 
-I put all the work-related repositories inside the `~/work` directory, so I generated a little bash script in `~/.ssh/`
+I put all the work-related repositories inside the `~/work` directory, so I generated a little bash script in `~/.ssh/` called `git-with-ssh.sh`
 
 ```bash
 #!/bin/bash
