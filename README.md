@@ -5,8 +5,8 @@ Scenario: I needed to configure two ssh keys, one personal and one work, on the 
 ## Generate SSH keys
 First generate two ssh keys.
 
-> ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub
-~/.ssh/work_rsa and ~/.ssh/work_rsa.pub
+`~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`
+`/.ssh/work_rsa` and `~/.ssh/work_rsa.pub`
 
 And configure them in Gitlab according to the [documentation](https://docs.gitlab.com/ee/user/ssh.html "documentation").
 
@@ -16,7 +16,7 @@ Create the file `~/.ssh/config` and add the following contents:
     Host gitlab.com
         HostName gitlab.com
         User git
-        IdentityFile ~/.ssh/personal_key
+        IdentityFile ~/.ssh/id_rsa
 
 
 I put all the work-related repositories inside the `~/work` directory, so I generated a little bash script in `~/.ssh/`
